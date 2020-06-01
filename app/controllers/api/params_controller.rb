@@ -4,4 +4,9 @@ class Api::ParamsController < ApplicationController
     render "caps.json.jb"
   end 
 
+  def caps_segment_action
+    @message = params[:phrase].upcase
+    render "caps_segment.json.jb"
+  end 
+
 end
