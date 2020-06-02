@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   namespace :api do
     get "/caps_url" => "params#caps_action"
     get "/caps_segment_url/:phrase" => "params#caps_action"
-    post "/caps_body_url" => "params#caps_body_action"
+    post "/caps_body_url" => "params#caps_action"
   end
 end
